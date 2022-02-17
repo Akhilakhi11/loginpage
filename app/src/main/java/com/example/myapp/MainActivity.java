@@ -3,8 +3,11 @@ package com.example.myapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity<button> extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
