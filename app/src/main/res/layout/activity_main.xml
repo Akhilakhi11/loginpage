@@ -7,51 +7,6 @@
     android:background="#022868"
     tools:context=".MainActivity">
 
-<!--    <EditText-->
-<!--        android:id="@+id/etEmail"-->
-<!--        android:layout_width="344dp"-->
-<!--        android:layout_height="50dp"-->
-<!--        android:ems="10"-->
-<!--        android:hint="Your Email"-->
-<!--        android:inputType="textEmailAddress"-->
-<!--        tools:layout_editor_absoluteX="58dp"-->
-<!--        tools:layout_editor_absoluteY="398dp" />-->
-
-<!--    <EditText-->
-<!--        android:id="@+id/etpass"-->
-<!--        android:layout_width="344dp"-->
-<!--        android:layout_height="52dp"-->
-<!--        android:ems="10"-->
-<!--        android:hint="Your Password"-->
-<!--        android:inputType="textPassword"-->
-<!--        tools:layout_editor_absoluteX="58dp"-->
-<!--        tools:layout_editor_absoluteY="466dp" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btnlogin"-->
-<!--        android:layout_width="342dp"-->
-<!--        android:layout_height="66dp"-->
-<!--        android:text="Log In"-->
-<!--        tools:layout_editor_absoluteX="58dp"-->
-<!--        tools:layout_editor_absoluteY="544dp" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/textView"-->
-<!--        android:layout_width="295dp"-->
-<!--        android:layout_height="26dp"-->
-<!--        android:text="Please log into your existing account"-->
-<!--        tools:layout_editor_absoluteX="72dp"-->
-<!--        tools:layout_editor_absoluteY="335dp" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/textView3"-->
-<!--        android:layout_width="307dp"-->
-<!--        android:layout_height="43dp"-->
-<!--        android:text="Welcome Back!"-->
-<!--        android:textStyle="bold"-->
-<!--        tools:layout_editor_absoluteX="72dp"-->
-<!--        tools:layout_editor_absoluteY="265dp" />-->
-
     <ImageView
         android:id="@+id/imageView3"
         android:layout_margin="50dp"
@@ -88,11 +43,12 @@
         app:layout_constraintTop_toBottomOf="@id/welcometext"/>
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:background="@drawable/edit_round"
+        android:textColor="@color/white"
         android:padding="20dp"
         android:hint="Your Email"
         android:inputType="textEmailAddress"
@@ -108,20 +64,21 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:background="@drawable/edit_round"
+        android:textColor="@color/white"
         android:padding="20dp"
         android:hint="Your Password"
-        android:inputType="textEmailAddress"
+        android:inputType="textPassword"
         android:textColorHint="@color/white"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/email" />
+        app:layout_constraintTop_toBottomOf="@id/username" />
 
     <TextView
+        android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="50dp"
-        android:drawableLeft="@drawable/ic_logpic"
         android:padding="20dp"
         android:elevation="5dp"
         android:gravity="center"
@@ -133,8 +90,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 
 
